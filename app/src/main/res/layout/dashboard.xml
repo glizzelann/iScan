@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:padding="25dp"
+    tools:background="@android:color/white"
+    tools:context=".MonitoringActivity">
+
+
+    <ImageButton
+        android:id="@+id/runningapps_btn"
+        android:layout_width="262dp"
+        android:layout_height="105dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="17dp"
+        android:layout_marginTop="65dp"
+        android:adjustViewBounds="false"
+        android:background="@android:color/transparent"
+        android:contentDescription=""
+        android:elevation="32dp"
+        android:onClick="onButtonClick"
+        android:scaleType="fitEnd"
+        android:paddingBottom="15dp"
+        app:srcCompat="@drawable/running_appsbtn"
+        tools:ignore="ContentDescription,ObsoleteLayoutParam,UnusedAttribute" />
+
+    <ImageButton
+        android:id="@+id/scan_btn"
+        android:state_pressed="true"
+        android:layout_width="266dp"
+        android:paddingBottom="16dp"
+        android:layout_height="105dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="50dp"
+        android:adjustViewBounds="false"
+        android:background="@android:color/transparent"
+        android:contentDescription=""
+        android:elevation="15dp"
+        android:onClick="onButtonClick"
+        android:scaleType="fitEnd"
+        app:srcCompat="@drawable/scanbutton"
+        tools:ignore="ContentDescription,ObsoleteLayoutParam,UnusedAttribute" />
+
+
+</LinearLayout>
